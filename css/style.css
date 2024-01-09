@@ -1,0 +1,67 @@
+/* ////////// Global //////// */
+* {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(#02649f, #011945);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+/*///////// Search Bar Area ////////////*/
+
+.searchBar {
+  height: 500px;
+  background-image: url(../images/clouds-2329680_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*//////////// Weather Card Area ////////////// */
+.container-fluid .content-title {
+  font-size: 3.5rem;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 800;
+  color: #fff;
+}
+.dgree img {
+  width: 100px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.condition .status div p {
+  margin-right: 20px;
+}
+.condition .status div .lastChild {
+  margin-right: 0px;
+}
+.container-fluid .row .weather-card .status div {
+  display: flex;
+  gap: 10px;
+}
+.container-fluid .row .dgree .average-dgree {
+  font-size: 5.8rem;
+}
+
+.weather-card {
+  border-radius: 25px;
+}
+.container-fluid .row .weather-card .date {
+  padding: 8px 30px;
+}
+.container-fluid .row .weather-card {
+  padding: 20px;
+  background-color: rgba(0, 25, 66, 0.4);
+  border: 2px solid #fff;
+}
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  .container-fluid .row .dgree .average-dgree {
+    font-size: 3.6rem;
+  }
+}

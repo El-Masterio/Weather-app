@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather Application</title>
+  </head>
+  <body>
+    <div
+      class="searchBar d-flex justify-content-center align-items-center bg-danger"
+    >
+      <input
+        class="form-control w-50"
+        type="text"
+        id="land_input"
+        placeholder="Enter your location"
+      />
+      <button class="btn btn-outline-light" id="location_finder">
+        Find me!
+      </button>
+    </div>
+
+    <div class="container-fluid">
+      <h1 class="content-title text-center pt-5">
+        Weather forecast for three days
+      </h1>
+      <div class="row" id="contentRow">
+        <div class="col-lg-4">
+          <div class="weather-card text-center text-light mt-5">
+            <div class="date w-100 d-flex justify-content-between">
+              <p>Sunday</p>
+              <p>1. January</p>
+            </div>
+            <div class="">
+              <h3 class="location-name pt-2">Mannheim</h3>
+              <h5 class="location-country pb-2">Germany</h5>
+
+              <div
+                class="dgree d-flex justify-content-center align-items-center gap-3"
+              >
+                <span class="average-dgree" id="average-temp"
+                  >-21.4<sup>o</sup>C</span
+                >
+
+                <img src="./images/182.png" alt="" class="" />
+              </div>
+              <div>
+                <p class="text-primary">Sunny</p>
+              </div>
+              <div class="d-flex pt-4 justify-content-between">
+                <span class="h5" id="min-temp">min -1.0 <sup>o</sup>C</span>
+                <span class="h5" id="max-temp">max 5 <sup>o</sup>C</span>
+              </div>
+              <div class="condition">
+                <div
+                  class="status d-flex gap-3 py-5 flex-wrap justify-content-center align-items-center"
+                >
+                  <div>
+                    <img src="./images/icon-umberella.svg" alt="" />
+                    <p>20%</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/icon-wind.svg" alt="" />
+                    <p>15 Km/h</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/drop-humidity-icon.svg" alt="" />
+                    <p>73%</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/snow-icon.svg" alt="" />
+                    <p class="lastChild">40%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="weather-card text-center text-light mt-5">
+            <div class="date w-100 d-flex justify-content-between">
+              <p>Sunday</p>
+              <p>1. January</p>
+            </div>
+            <div class="">
+              <h3 class="location-name pt-2">Mannheim</h3>
+              <h5 class="location-country pb-2">Germany</h5>
+
+              <div
+                class="dgree d-flex justify-content-center align-items-center gap-3"
+              >
+                <span class="average-dgree" id="average-temp"
+                  >2.3<sup>o</sup>C</span
+                >
+
+                <img src="./images/113.png" alt="" class="" />
+              </div>
+              <div>
+                <p class="text-primary">Sunny</p>
+              </div>
+              <div class="d-flex pt-4 justify-content-between">
+                <span class="h5" id="min-temp">min -1.0 <sup>o</sup>C</span>
+                <span class="h5" id="max-temp">max 5 <sup>o</sup>C</span>
+              </div>
+              <div class="condition">
+                <div
+                  class="status d-flex gap-3 py-5 flex-wrap justify-content-center align-items-center"
+                >
+                  <div>
+                    <img src="./images/icon-umberella.svg" alt="" />
+                    <p>20%</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/icon-wind.svg" alt="" />
+                    <p>15 Km/h</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/drop-humidity-icon.svg" alt="" />
+                    <p>73%</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/snow-icon.svg" alt="" />
+                    <p class="lastChild">40%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="weather-card text-center text-light mt-5">
+            <div class="date w-100 d-flex justify-content-between">
+              <p>Sunday</p>
+              <p>1. January</p>
+            </div>
+            <div class="">
+              <h3 class="location-name pt-2">Mannheim</h3>
+              <h5 class="location-country pb-2">Germany</h5>
+
+              <div
+                class="dgree d-flex justify-content-center align-items-center gap-3"
+              >
+                <span class="average-dgree" id="average-temp"
+                  >2<sup>o</sup>C</span
+                >
+
+                <img src="./images/113.png" alt="" class="" />
+              </div>
+              <div>
+                <p class="text-primary">Sunny</p>
+              </div>
+              <div class="d-flex pt-4 justify-content-between">
+                <span class="h5" id="min-temp">min -1.0 <sup>o</sup>C</span>
+                <span class="h5" id="max-temp">max 5 <sup>o</sup>C</span>
+              </div>
+              <div class="condition">
+                <div
+                  class="status d-flex gap-3 py-5 flex-wrap justify-content-center align-items-center"
+                >
+                  <div>
+                    <img src="./images/icon-umberella.svg" alt="" />
+                    <p>20%</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/icon-wind.svg" alt="" />
+                    <p>15 Km/h</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/drop-humidity-icon.svg" alt="" />
+                    <p>73%</p>
+                  </div>
+
+                  <div>
+                    <img src="./images/snow-icon.svg" alt="" />
+                    <p class="lastChild">40%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="position-absolute bottom-0">
+      <div class="text-light">
+        Powered by
+        <a href="https://www.weatherapi.com/" title="Free Weather API"
+          >WeatherAPI.com</a
+        >
+        Designed by Ahmad
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
